@@ -11,8 +11,8 @@ package m;
  */
 public class etud {
     String nom;
-    float note1;
-    float note2;
+    int note1;
+    int note2;
 
     public etud(String nom, int note1, int note2) {
         this.nom = nom;

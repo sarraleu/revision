@@ -33,8 +33,8 @@ public class etud_serv extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-       float n1=Integer.parseInt(request.getParameter("note1"));
-      float n2=Integer.parseInt(request.getParameter("note2"));
+       int n1=Integer.parseInt(request.getParameter("note1"));
+      int n2=Integer.parseInt(request.getParameter("note2"));
       float m=(n1+n2)/2;
       request.setAttribute("m", m);
       request.getRequestDispatcher("etudjsp.jsp").forward(request, response);
